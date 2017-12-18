@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */; };
-		A0068ABE1FE877D20038BAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0068ABD1FE877D20038BAC0 /* ViewController.swift */; };
+		A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0068ABD1FE877D20038BAC0 /* HomeVC.swift */; };
 		A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068ABF1FE877D20038BAC0 /* Main.storyboard */; };
 		A0068AC31FE877D20038BAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC21FE877D20038BAC0 /* Assets.xcassets */; };
 		A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */; };
+		C447D868999D233ED20FC6A6 /* Pods_astro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300E47345DF365CE37BD41CD /* Pods-astro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-astro/Pods-astro.debug.xcconfig"; sourceTree = "<group>"; };
+		600516250B9F38F489499304 /* Pods-astro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astro.release.xcconfig"; path = "Pods/Target Support Files/Pods-astro/Pods-astro.release.xcconfig"; sourceTree = "<group>"; };
+		9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_astro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0068AB81FE877D20038BAC0 /* astro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0068ABD1FE877D20038BAC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0068ABD1FE877D20038BAC0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A0068AC01FE877D20038BAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0068AC21FE877D20038BAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0068AC51FE877D20038BAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C447D868999D233ED20FC6A6 /* Pods_astro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1093A6D57FACE9728CABDB8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B962BBD8F49A16B3D328E02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				300E47345DF365CE37BD41CD /* Pods-astro.debug.xcconfig */,
+				600516250B9F38F489499304 /* Pods-astro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0068AAF1FE877D20038BAC0 = {
 			isa = PBXGroup;
 			children = (
 				A0068ABA1FE877D20038BAC0 /* astro */,
 				A0068AB91FE877D20038BAC0 /* Products */,
+				2B962BBD8F49A16B3D328E02 /* Pods */,
+				1093A6D57FACE9728CABDB8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,46 @@
 		A0068ABA1FE877D20038BAC0 /* astro */ = {
 			isa = PBXGroup;
 			children = (
+				A0068AD01FE877FE0038BAC0 /* Services */,
+				A0068ACF1FE877F30038BAC0 /* Controllers */,
+				A0068ACE1FE877ED0038BAC0 /* Views */,
+				A0068ACD1FE877E60038BAC0 /* Models */,
 				A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */,
-				A0068ABD1FE877D20038BAC0 /* ViewController.swift */,
 				A0068ABF1FE877D20038BAC0 /* Main.storyboard */,
 				A0068AC21FE877D20038BAC0 /* Assets.xcassets */,
 				A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */,
 				A0068AC71FE877D20038BAC0 /* Info.plist */,
 			);
 			path = astro;
+			sourceTree = "<group>";
+		};
+		A0068ACD1FE877E60038BAC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0068ACE1FE877ED0038BAC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0068ACF1FE877F30038BAC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0068ABD1FE877D20038BAC0 /* HomeVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0068AD01FE877FE0038BAC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0068ACA1FE877D20038BAC0 /* Build configuration list for PBXNativeTarget "astro" */;
 			buildPhases = (
+				970A87206D778DD76A25C098 /* [CP] Check Pods Manifest.lock */,
 				A0068AB41FE877D20038BAC0 /* Sources */,
 				A0068AB51FE877D20038BAC0 /* Frameworks */,
 				A0068AB61FE877D20038BAC0 /* Resources */,
+				697527A56305E3288CAB471D /* [CP] Embed Pods Frameworks */,
+				F6221F63B13F33E4CF8697E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +190,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		697527A56305E3288CAB471D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-astro/Pods-astro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-astro/Pods-astro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970A87206D778DD76A25C098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-astro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6221F63B13F33E4CF8697E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-astro/Pods-astro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0068AB41FE877D20038BAC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0068ABE1FE877D20038BAC0 /* ViewController.swift in Sources */,
+				A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */,
 				A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +387,7 @@
 		};
 		A0068ACB1FE877D20038BAC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300E47345DF365CE37BD41CD /* Pods-astro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +403,7 @@
 		};
 		A0068ACC1FE877D20038BAC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600516250B9F38F489499304 /* Pods-astro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
