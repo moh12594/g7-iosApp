@@ -8,4 +8,5 @@ target 'astro' do
   # Pods for astro
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Firebase/Core'
 end

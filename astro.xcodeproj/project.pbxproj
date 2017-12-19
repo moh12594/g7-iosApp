@@ -12,6 +12,7 @@
 		A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068ABF1FE877D20038BAC0 /* Main.storyboard */; };
 		A0068AC31FE877D20038BAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC21FE877D20038BAC0 /* Assets.xcassets */; };
 		A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */; };
+		A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02A70381FE906B50097D878 /* GoogleService-Info.plist */; };
 		C447D868999D233ED20FC6A6 /* Pods_astro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A0068AC21FE877D20038BAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0068AC51FE877D20038BAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0068AC71FE877D20038BAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02A70381FE906B50097D878 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				A0068AC21FE877D20038BAC0 /* Assets.xcassets */,
 				A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */,
 				A0068AC71FE877D20038BAC0 /* Info.plist */,
+				A02A70381FE906B50097D878 /* GoogleService-Info.plist */,
 			);
 			path = astro;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */,
+				A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */,
 				A0068AC31FE877D20038BAC0 /* Assets.xcassets in Resources */,
 				A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */,
 			);
@@ -199,12 +203,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-astro/Pods-astro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
