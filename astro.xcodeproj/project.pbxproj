@@ -10,9 +10,33 @@
 		A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */; };
 		A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0068ABD1FE877D20038BAC0 /* HomeVC.swift */; };
 		A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068ABF1FE877D20038BAC0 /* Main.storyboard */; };
-		A0068AC31FE877D20038BAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC21FE877D20038BAC0 /* Assets.xcassets */; };
 		A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */; };
+		A0105C101FE96482001E5864 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0105C0F1FE96482001E5864 /* RoundedButton.swift */; };
 		A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02A70381FE906B50097D878 /* GoogleService-Info.plist */; };
+		A0374A571FE9684A0083937B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0374A561FE9684A0083937B /* Assets.xcassets */; };
+		A0374A661FE9691D0083937B /* Calibre-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A581FE9691B0083937B /* Calibre-Thin.otf */; };
+		A0374A671FE9691D0083937B /* Calibre-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A591FE9691B0083937B /* Calibre-BoldItalic.otf */; };
+		A0374A681FE9691D0083937B /* Calibre-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5A1FE9691B0083937B /* Calibre-Semibold.otf */; };
+		A0374A691FE9691D0083937B /* Calibre-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5B1FE9691B0083937B /* Calibre-SemiboldItalic.otf */; };
+		A0374A6A1FE9691D0083937B /* Calibre-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5C1FE9691C0083937B /* Calibre-Medium.otf */; };
+		A0374A6B1FE9691D0083937B /* Calibre-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5D1FE9691C0083937B /* Calibre-Regular.otf */; };
+		A0374A6C1FE9691D0083937B /* Calibre-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5E1FE9691C0083937B /* Calibre-BlackItalic.otf */; };
+		A0374A6D1FE9691D0083937B /* Calibre-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A5F1FE9691C0083937B /* Calibre-MediumItalic.otf */; };
+		A0374A6E1FE9691D0083937B /* Calibre-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A601FE9691C0083937B /* Calibre-Bold.otf */; };
+		A0374A6F1FE9691D0083937B /* Calibre-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A611FE9691C0083937B /* Calibre-Light.otf */; };
+		A0374A701FE9691D0083937B /* Calibre-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A621FE9691D0083937B /* Calibre-Black.otf */; };
+		A0374A711FE9691D0083937B /* Calibre-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A631FE9691D0083937B /* Calibre-ThinItalic.otf */; };
+		A0374A721FE9691D0083937B /* Calibre-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A641FE9691D0083937B /* Calibre-LightItalic.otf */; };
+		A0374A731FE9691D0083937B /* Calibre-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A651FE9691D0083937B /* Calibre-RegularItalic.otf */; };
+		A0374A771FE969310083937B /* ApercuPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A741FE969300083937B /* ApercuPro-Bold.otf */; };
+		A0374A781FE969310083937B /* Apercu.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A751FE969300083937B /* Apercu.otf */; };
+		A0374A791FE969310083937B /* apercu_regular_pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A761FE969300083937B /* apercu_regular_pro.otf */; };
+		A03CAD5F1FE9C6D8000E84DA /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CAD5E1FE9C6D8000E84DA /* OnBoardingVC.swift */; };
+		A074B0691FEA595B008B7C06 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074B0681FEA595B008B7C06 /* RoundedView.swift */; };
+		A0BE673D1FE94B690000514D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE673C1FE94B690000514D /* User.swift */; };
+		A0BE673F1FE94BF60000514D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE673E1FE94BF60000514D /* AuthService.swift */; };
+		A0BE67421FE94D630000514D /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE67411FE94D630000514D /* constants.swift */; };
+		A0C7AB301FEA61D100FA16E4 /* TextFielDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */; };
 		C447D868999D233ED20FC6A6 /* Pods_astro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +48,34 @@
 		A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0068ABD1FE877D20038BAC0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A0068AC01FE877D20038BAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A0068AC21FE877D20038BAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0068AC51FE877D20038BAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0068AC71FE877D20038BAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0105C0F1FE96482001E5864 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A02A70381FE906B50097D878 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0374A561FE9684A0083937B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Smack/Smack/Assets.xcassets; sourceTree = "<group>"; };
+		A0374A581FE9691B0083937B /* Calibre-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Thin.otf"; sourceTree = "<group>"; };
+		A0374A591FE9691B0083937B /* Calibre-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-BoldItalic.otf"; sourceTree = "<group>"; };
+		A0374A5A1FE9691B0083937B /* Calibre-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Semibold.otf"; sourceTree = "<group>"; };
+		A0374A5B1FE9691B0083937B /* Calibre-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		A0374A5C1FE9691C0083937B /* Calibre-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Medium.otf"; sourceTree = "<group>"; };
+		A0374A5D1FE9691C0083937B /* Calibre-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Regular.otf"; sourceTree = "<group>"; };
+		A0374A5E1FE9691C0083937B /* Calibre-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-BlackItalic.otf"; sourceTree = "<group>"; };
+		A0374A5F1FE9691C0083937B /* Calibre-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-MediumItalic.otf"; sourceTree = "<group>"; };
+		A0374A601FE9691C0083937B /* Calibre-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Bold.otf"; sourceTree = "<group>"; };
+		A0374A611FE9691C0083937B /* Calibre-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Light.otf"; sourceTree = "<group>"; };
+		A0374A621FE9691D0083937B /* Calibre-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Black.otf"; sourceTree = "<group>"; };
+		A0374A631FE9691D0083937B /* Calibre-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-ThinItalic.otf"; sourceTree = "<group>"; };
+		A0374A641FE9691D0083937B /* Calibre-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-LightItalic.otf"; sourceTree = "<group>"; };
+		A0374A651FE9691D0083937B /* Calibre-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-RegularItalic.otf"; sourceTree = "<group>"; };
+		A0374A741FE969300083937B /* ApercuPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ApercuPro-Bold.otf"; sourceTree = "<group>"; };
+		A0374A751FE969300083937B /* Apercu.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apercu.otf; sourceTree = "<group>"; };
+		A0374A761FE969300083937B /* apercu_regular_pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = apercu_regular_pro.otf; sourceTree = "<group>"; };
+		A03CAD5E1FE9C6D8000E84DA /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		A074B0681FEA595B008B7C06 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		A0BE673C1FE94B690000514D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A0BE673E1FE94BF60000514D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A0BE67411FE94D630000514D /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +128,17 @@
 		A0068ABA1FE877D20038BAC0 /* astro */ = {
 			isa = PBXGroup;
 			children = (
+				A0905D431FE967E8005E6F4B /* Fonts */,
+				A0BE67401FE94D530000514D /* Utilities */,
 				A0068AD01FE877FE0038BAC0 /* Services */,
 				A0068ACF1FE877F30038BAC0 /* Controllers */,
 				A0068ACE1FE877ED0038BAC0 /* Views */,
 				A0068ACD1FE877E60038BAC0 /* Models */,
 				A0068ABB1FE877D20038BAC0 /* AppDelegate.swift */,
 				A0068ABF1FE877D20038BAC0 /* Main.storyboard */,
-				A0068AC21FE877D20038BAC0 /* Assets.xcassets */,
 				A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */,
 				A0068AC71FE877D20038BAC0 /* Info.plist */,
+				A0374A561FE9684A0083937B /* Assets.xcassets */,
 				A02A70381FE906B50097D878 /* GoogleService-Info.plist */,
 			);
 			path = astro;
@@ -97,6 +147,7 @@
 		A0068ACD1FE877E60038BAC0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0BE673C1FE94B690000514D /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +155,9 @@
 		A0068ACE1FE877ED0038BAC0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0105C0F1FE96482001E5864 /* RoundedButton.swift */,
+				A074B0681FEA595B008B7C06 /* RoundedView.swift */,
+				A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A0068ABD1FE877D20038BAC0 /* HomeVC.swift */,
+				A03CAD5E1FE9C6D8000E84DA /* OnBoardingVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,8 +174,41 @@
 		A0068AD01FE877FE0038BAC0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A0BE673E1FE94BF60000514D /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A0905D431FE967E8005E6F4B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A0374A621FE9691D0083937B /* Calibre-Black.otf */,
+				A0374A5E1FE9691C0083937B /* Calibre-BlackItalic.otf */,
+				A0374A601FE9691C0083937B /* Calibre-Bold.otf */,
+				A0374A591FE9691B0083937B /* Calibre-BoldItalic.otf */,
+				A0374A611FE9691C0083937B /* Calibre-Light.otf */,
+				A0374A641FE9691D0083937B /* Calibre-LightItalic.otf */,
+				A0374A5C1FE9691C0083937B /* Calibre-Medium.otf */,
+				A0374A761FE969300083937B /* apercu_regular_pro.otf */,
+				A0374A751FE969300083937B /* Apercu.otf */,
+				A0374A741FE969300083937B /* ApercuPro-Bold.otf */,
+				A0374A5F1FE9691C0083937B /* Calibre-MediumItalic.otf */,
+				A0374A5D1FE9691C0083937B /* Calibre-Regular.otf */,
+				A0374A651FE9691D0083937B /* Calibre-RegularItalic.otf */,
+				A0374A5A1FE9691B0083937B /* Calibre-Semibold.otf */,
+				A0374A5B1FE9691B0083937B /* Calibre-SemiboldItalic.otf */,
+				A0374A581FE9691B0083937B /* Calibre-Thin.otf */,
+				A0374A631FE9691D0083937B /* Calibre-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A0BE67401FE94D530000514D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A0BE67411FE94D630000514D /* constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +274,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */,
+				A0374A671FE9691D0083937B /* Calibre-BoldItalic.otf in Resources */,
+				A0374A6E1FE9691D0083937B /* Calibre-Bold.otf in Resources */,
+				A0374A771FE969310083937B /* ApercuPro-Bold.otf in Resources */,
+				A0374A731FE9691D0083937B /* Calibre-RegularItalic.otf in Resources */,
+				A0374A791FE969310083937B /* apercu_regular_pro.otf in Resources */,
+				A0374A6A1FE9691D0083937B /* Calibre-Medium.otf in Resources */,
+				A0374A6B1FE9691D0083937B /* Calibre-Regular.otf in Resources */,
+				A0374A711FE9691D0083937B /* Calibre-ThinItalic.otf in Resources */,
 				A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */,
-				A0068AC31FE877D20038BAC0 /* Assets.xcassets in Resources */,
+				A0374A6D1FE9691D0083937B /* Calibre-MediumItalic.otf in Resources */,
+				A0374A661FE9691D0083937B /* Calibre-Thin.otf in Resources */,
+				A0374A701FE9691D0083937B /* Calibre-Black.otf in Resources */,
+				A0374A6C1FE9691D0083937B /* Calibre-BlackItalic.otf in Resources */,
+				A0374A781FE969310083937B /* Apercu.otf in Resources */,
+				A0374A6F1FE9691D0083937B /* Calibre-Light.otf in Resources */,
+				A0374A721FE9691D0083937B /* Calibre-LightItalic.otf in Resources */,
+				A0374A681FE9691D0083937B /* Calibre-Semibold.otf in Resources */,
+				A0374A691FE9691D0083937B /* Calibre-SemiboldItalic.otf in Resources */,
+				A0374A571FE9684A0083937B /* Assets.xcassets in Resources */,
 				A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +308,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-astro/Pods-astro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -210,6 +319,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -259,8 +372,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A074B0691FEA595B008B7C06 /* RoundedView.swift in Sources */,
 				A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */,
+				A0105C101FE96482001E5864 /* RoundedButton.swift in Sources */,
 				A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */,
+				A0C7AB301FEA61D100FA16E4 /* TextFielDate.swift in Sources */,
+				A03CAD5F1FE9C6D8000E84DA /* OnBoardingVC.swift in Sources */,
+				A0BE673D1FE94B690000514D /* User.swift in Sources */,
+				A0BE67421FE94D630000514D /* constants.swift in Sources */,
+				A0BE673F1FE94BF60000514D /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

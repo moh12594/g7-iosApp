@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
 
 class HomeVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    if AuthService.instance.isUserLoggenIn() == true {
+      self.performSegue(withIdentifier: "connected", sender: nil)
+    }
   }
 
   override func didReceiveMemoryWarning() {
@@ -20,6 +24,24 @@ class HomeVC: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-
+  @IBAction func facebookLoginWasPressed(_ sender: Any) {
+    AuthService.instance.facebookLogin(viewConroller: self) { (success) in
+      if success {
+        self.performSegue(withIdentifier: "connected", sender: nil)
+      } else {
+        print("error")
+      }
+    }
+  }
+  
+  @IBAction func logoutWasPressed(_ sender: Any) {
+    let firebaseAuth = Auth.auth()
+    do {
+      try firebaseAuth.signOut()
+    } catch let signOutError as NSError {
+      print ("Error signing out: %@", signOutError)
+    }
+  }
+  
 }
 

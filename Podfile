@@ -9,4 +9,8 @@ target 'astro' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
 end
