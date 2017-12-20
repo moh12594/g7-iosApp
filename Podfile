@@ -14,4 +14,5 @@ target 'astro' do
   pod 'Bolts'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
+  pod 'FSPagerView'
 end
