@@ -11,8 +11,5 @@ import Foundation
 struct User {
   public private(set) var id: String!
   public private(set) var firstName: String!
-  public private(set) var name: String!
-  public private(set) var email: String!
-  public private(set) var dateCreated: String!
-  public private(set) var lastConnection: String!
+  public private(set) var lastName: String!
 }

@@ -14,9 +14,9 @@ class HomeVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    if AuthService.instance.isUserLoggenIn() == true {
-      self.performSegue(withIdentifier: "connected", sender: nil)
-    }
+//    if AuthService.instance.isUserLoggenIn() == true {
+//      self.performSegue(withIdentifier: "connected", sender: nil)
+//    }
   }
 
   override func didReceiveMemoryWarning() {
