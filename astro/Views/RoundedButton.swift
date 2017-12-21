@@ -15,6 +15,12 @@ class RoundedButton: UIButton {
       self.layer.cornerRadius = cornerRadius
     }
   }
+
+  @IBInspectable var rightSpace:  CGFloat = 40.0 {
+    didSet {
+      self.titleEdgeInsets.right = rightSpace
+    }
+  }
   
   override func awakeFromNib() {
     self.setupView()
@@ -26,7 +32,7 @@ class RoundedButton: UIButton {
   }
   
   func setupView() {
-    self.titleEdgeInsets.right = 40
+    self.titleEdgeInsets.right = rightSpace
     self.layer.cornerRadius = cornerRadius
   }
 }

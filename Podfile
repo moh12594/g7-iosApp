@@ -14,5 +14,5 @@ target 'astro' do
   pod 'Bolts'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
-  pod 'FSPagerView'
+  pod 'FSPagerView', '~> 0.7'
 end

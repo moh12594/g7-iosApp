@@ -21,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     UIApplication.shared.statusBarStyle = .lightContent
     FirebaseApp.configure()
     FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    
+    if Auth.auth().currentUser == nil {
+      let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+      let homeVC = storyboard.instantiateViewController(withIdentifier: "homeVC")
+      window?.makeKeyAndVisible()
+      window?.rootViewController?.present(homeVC, animated: true, completion: nil)
+    }
     return true
   }
   

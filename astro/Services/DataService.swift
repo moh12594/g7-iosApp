@@ -30,6 +30,21 @@ class DataService {
     REF_USERS.child(uid).updateChildValues(userData)
   }
 
+  func getUserSunSign(handler: @escaping (_ firstName: String) -> ()) {
+    if Auth.auth().currentUser != nil {
+      let uid = Auth.auth().currentUser?.uid
+      REF_BASE.child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+        let value = snapshot.value as? NSDictionary
+        let sunSign = value?["sunSign"] as? String ?? ""
+        handler(sunSign)
+      }) { (error) in
+        print(error.localizedDescription)
+      }
+    } else {
+      
+    }
+  }
+  
   func getUsername(forUID uid: String, handler: @escaping (_ firstName: String) -> ()) {
     if Auth.auth().currentUser != nil {
       let uid = Auth.auth().currentUser?.uid

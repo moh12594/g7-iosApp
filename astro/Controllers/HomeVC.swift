@@ -14,9 +14,7 @@ class HomeVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-//    if AuthService.instance.isUserLoggenIn() == true {
-//      self.performSegue(withIdentifier: "connected", sender: nil)
-//    }
+
   }
 
   override func didReceiveMemoryWarning() {
@@ -25,6 +23,11 @@ class HomeVC: UIViewController {
   }
 
   @IBAction func facebookLoginWasPressed(_ sender: Any) {
+    Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+      AnalyticsParameterItemID: "Facebook clocked" as NSObject,
+      AnalyticsParameterItemName: "ok ok" as NSObject,
+      AnalyticsParameterContentType: "cont" as NSObject
+      ])
     AuthService.instance.facebookLogin(viewConroller: self) { (success) in
       if success {
         self.performSegue(withIdentifier: "connected", sender: nil)
@@ -33,15 +36,7 @@ class HomeVC: UIViewController {
       }
     }
   }
-  
-  @IBAction func logoutWasPressed(_ sender: Any) {
-    let firebaseAuth = Auth.auth()
-    do {
-      try firebaseAuth.signOut()
-    } catch let signOutError as NSError {
-      print ("Error signing out: %@", signOutError)
-    }
-  }
+
   
 }
 

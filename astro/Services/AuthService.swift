@@ -6,7 +6,6 @@
 //  Copyright © 2017 Mohamed SADAT. All rights reserved.
 //
 
-import Foundation
 import Firebase
 import FBSDKLoginKit
 import Alamofire
@@ -43,6 +42,16 @@ class AuthService {
       defaults.set(newValue, forKey: LOGGED_IN_KEY)
     }
   }
+  
+  var userSunSign: String {
+    get {
+      return defaults.value(forKey: USER_SUN) as! String
+    }
+    set {
+      defaults.set(newValue, forKey: USER_SUN)
+    }
+  }
+  
   
   func isUserLoggenIn()->Bool {
     if Auth.auth().currentUser != nil {
@@ -104,7 +113,8 @@ class AuthService {
   }
   
   func setBirthDate(birthDate: String) {
-    let userDic = ["birthDate": birthDate]
+    let sunSign = calculateSunSign(birthDate: birthDate)
+    let userDic = ["birthDate": birthDate, "sunSign": sunSign]
     DataService.instance.createDBUser(uid: self.userUid, userData: userDic)
   }
   

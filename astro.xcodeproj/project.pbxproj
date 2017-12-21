@@ -13,6 +13,8 @@
 		A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0068AC41FE877D20038BAC0 /* LaunchScreen.storyboard */; };
 		A0105C101FE96482001E5864 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0105C0F1FE96482001E5864 /* RoundedButton.swift */; };
 		A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02A70381FE906B50097D878 /* GoogleService-Info.plist */; };
+		A03580961FEBBCBC00EAC053 /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03580951FEBBCBC00EAC053 /* shared.swift */; };
+		A03580981FEC019800EAC053 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03580971FEC019800EAC053 /* SliderCell.swift */; };
 		A0374A571FE9684A0083937B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0374A561FE9684A0083937B /* Assets.xcassets */; };
 		A0374A661FE9691D0083937B /* Calibre-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A581FE9691B0083937B /* Calibre-Thin.otf */; };
 		A0374A671FE9691D0083937B /* Calibre-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0374A591FE9691B0083937B /* Calibre-BoldItalic.otf */; };
@@ -39,6 +41,7 @@
 		A0461D041FEAEB1100553A84 /* AstroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0461D031FEAEB1100553A84 /* AstroService.swift */; };
 		A0461D091FEAF3A000553A84 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0461D081FEAF3A000553A84 /* StringExtension.swift */; };
 		A074B0691FEA595B008B7C06 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074B0681FEA595B008B7C06 /* RoundedView.swift */; };
+		A09BDC101FEC2EC100644339 /* podcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09BDC0F1FEC2EC100644339 /* podcastCell.swift */; };
 		A0BE673D1FE94B690000514D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE673C1FE94B690000514D /* User.swift */; };
 		A0BE673F1FE94BF60000514D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE673E1FE94BF60000514D /* AuthService.swift */; };
 		A0BE67421FE94D630000514D /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE67411FE94D630000514D /* constants.swift */; };
@@ -60,6 +63,8 @@
 		A0068AC71FE877D20038BAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0105C0F1FE96482001E5864 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A02A70381FE906B50097D878 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A03580951FEBBCBC00EAC053 /* shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
+		A03580971FEC019800EAC053 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		A0374A561FE9684A0083937B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Smack/Smack/Assets.xcassets; sourceTree = "<group>"; };
 		A0374A581FE9691B0083937B /* Calibre-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Thin.otf"; sourceTree = "<group>"; };
 		A0374A591FE9691B0083937B /* Calibre-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		A0461D031FEAEB1100553A84 /* AstroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroService.swift; sourceTree = "<group>"; };
 		A0461D081FEAF3A000553A84 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A074B0681FEA595B008B7C06 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		A09BDC0F1FEC2EC100644339 /* podcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = podcastCell.swift; sourceTree = "<group>"; };
 		A0BE673C1FE94B690000514D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A0BE673E1FE94BF60000514D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A0BE67411FE94D630000514D /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 				A0105C0F1FE96482001E5864 /* RoundedButton.swift */,
 				A074B0681FEA595B008B7C06 /* RoundedView.swift */,
 				A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */,
+				A03580971FEC019800EAC053 /* SliderCell.swift */,
+				A09BDC0F1FEC2EC100644339 /* podcastCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BE67411FE94D630000514D /* constants.swift */,
+				A03580951FEBBCBC00EAC053 /* shared.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -408,7 +417,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03580981FEC019800EAC053 /* SliderCell.swift in Sources */,
 				A074B0691FEA595B008B7C06 /* RoundedView.swift in Sources */,
+				A09BDC101FEC2EC100644339 /* podcastCell.swift in Sources */,
 				A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */,
 				A0105C101FE96482001E5864 /* RoundedButton.swift in Sources */,
 				A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */,
@@ -418,6 +429,7 @@
 				A0461D041FEAEB1100553A84 /* AstroService.swift in Sources */,
 				A0461D091FEAF3A000553A84 /* StringExtension.swift in Sources */,
 				A0461CFA1FEAB69F00553A84 /* BirthTimeVC.swift in Sources */,
+				A03580961FEBBCBC00EAC053 /* shared.swift in Sources */,
 				A0C7AB341FEA721800FA16E4 /* DataService.swift in Sources */,
 				A0C7AB301FEA61D100FA16E4 /* TextFielDate.swift in Sources */,
 				A0461D001FEAC64000553A84 /* SecondOnBoardingVC.swift in Sources */,

@@ -44,8 +44,9 @@ class BirthDateVC: UIViewController {
   
   @objc func datePickerValueChanged(datePicker: UIDatePicker) {
     let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .medium
-    dateFormatter.timeStyle = .none
+    dateFormatter.dateFormat = "dd/MM/YYYY"
+//    dateFormatter.dateStyle = .medium
+//    dateFormatter.timeStyle = .none
     
     dateTextField.text = dateFormatter.string(from: datePicker.date)
   }
@@ -68,11 +69,12 @@ class BirthDateVC: UIViewController {
   }
   
   @objc func todayButtonPressed(sender: UIBarButtonItem) {
-    let dateFormatter = DateFormatter() // 1
-    dateFormatter.dateStyle = .medium
-    dateFormatter.timeStyle = .none
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd/MM/YYYY"
+//    dateFormatter.dateStyle = .medium
+//    dateFormatter.timeStyle = .none
     
-    dateTextField.text = dateFormatter.string(from: Date()) // 2
+    dateTextField.text = dateFormatter.string(from: Date())
     
     dateTextField.resignFirstResponder()
   }
