@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BirthPlaceVC: UIViewController, UITextFieldDelegate {
 
@@ -21,6 +22,7 @@ class BirthPlaceVC: UIViewController, UITextFieldDelegate {
     textField.resignFirstResponder()
     if birthPlaceField.text != "" {
       AuthService.instance.setBirthPlace(birthPlace: birthPlaceField.text!)
+      Analytics.setUserProperty(birthPlaceField.text!, forName: "user_birth_city")
       guard let secondOnBoardingVC = storyboard?.instantiateViewController(withIdentifier: "secondOnBoardingVC") else {return false}
       present(secondOnBoardingVC, animated: true, completion: nil)
     }

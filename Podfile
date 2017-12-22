@@ -15,4 +15,6 @@ target 'astro' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FSPagerView', '~> 0.7'
+  pod 'GravitySliderFlowLayout'
+  pod 'NVActivityIndicatorView'
 end

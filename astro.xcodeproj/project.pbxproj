@@ -40,6 +40,7 @@
 		A0461D021FEAE48800553A84 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0461D011FEAE48800553A84 /* WelcomeVC.swift */; };
 		A0461D041FEAEB1100553A84 /* AstroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0461D031FEAEB1100553A84 /* AstroService.swift */; };
 		A0461D091FEAF3A000553A84 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0461D081FEAF3A000553A84 /* StringExtension.swift */; };
+		A0602E2B1FEC777200090366 /* HoroscopeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0602E2A1FEC777200090366 /* HoroscopeCell.swift */; };
 		A074B0691FEA595B008B7C06 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074B0681FEA595B008B7C06 /* RoundedView.swift */; };
 		A09BDC101FEC2EC100644339 /* podcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09BDC0F1FEC2EC100644339 /* podcastCell.swift */; };
 		A0BE673D1FE94B690000514D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE673C1FE94B690000514D /* User.swift */; };
@@ -48,6 +49,10 @@
 		A0C7AB301FEA61D100FA16E4 /* TextFielDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */; };
 		A0C7AB321FEA62D100FA16E4 /* BirthDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7AB311FEA62D100FA16E4 /* BirthDateVC.swift */; };
 		A0C7AB341FEA721800FA16E4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7AB331FEA721800FA16E4 /* DataService.swift */; };
+		A0D6314F1FEC5F1D00AE0AED /* music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0D6314E1FEC5F1D00AE0AED /* music1.mp3 */; };
+		A0D631511FEC60A700AE0AED /* music0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0D631501FEC60A700AE0AED /* music0.mp3 */; };
+		A0D631541FEC678200AE0AED /* music3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0D631531FEC678100AE0AED /* music3.mp3 */; };
+		A0D631561FEC678A00AE0AED /* music2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0D631551FEC678A00AE0AED /* music2.mp3 */; };
 		C447D868999D233ED20FC6A6 /* Pods_astro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C415AFB8367EA30A7F0A3D3 /* Pods_astro.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +95,7 @@
 		A0461D011FEAE48800553A84 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		A0461D031FEAEB1100553A84 /* AstroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroService.swift; sourceTree = "<group>"; };
 		A0461D081FEAF3A000553A84 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A0602E2A1FEC777200090366 /* HoroscopeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeCell.swift; sourceTree = "<group>"; };
 		A074B0681FEA595B008B7C06 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		A09BDC0F1FEC2EC100644339 /* podcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = podcastCell.swift; sourceTree = "<group>"; };
 		A0BE673C1FE94B690000514D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -98,6 +104,10 @@
 		A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielDate.swift; sourceTree = "<group>"; };
 		A0C7AB311FEA62D100FA16E4 /* BirthDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDateVC.swift; sourceTree = "<group>"; };
 		A0C7AB331FEA721800FA16E4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A0D6314E1FEC5F1D00AE0AED /* music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music1.mp3; sourceTree = "<group>"; };
+		A0D631501FEC60A700AE0AED /* music0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music0.mp3; sourceTree = "<group>"; };
+		A0D631531FEC678100AE0AED /* music3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music3.mp3; sourceTree = "<group>"; };
+		A0D631551FEC678A00AE0AED /* music2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 		A0068ABA1FE877D20038BAC0 /* astro */ = {
 			isa = PBXGroup;
 			children = (
+				A0D631521FEC60AD00AE0AED /* Music */,
 				A0461D051FEAF34200553A84 /* Extensions */,
 				A0905D431FE967E8005E6F4B /* Fonts */,
 				A0BE67401FE94D530000514D /* Utilities */,
@@ -183,6 +194,7 @@
 				A0C7AB2F1FEA61D100FA16E4 /* TextFielDate.swift */,
 				A03580971FEC019800EAC053 /* SliderCell.swift */,
 				A09BDC0F1FEC2EC100644339 /* podcastCell.swift */,
+				A0602E2A1FEC777200090366 /* HoroscopeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +264,17 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		A0D631521FEC60AD00AE0AED /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A0D631551FEC678A00AE0AED /* music2.mp3 */,
+				A0D6314E1FEC5F1D00AE0AED /* music1.mp3 */,
+				A0D631501FEC60A700AE0AED /* music0.mp3 */,
+				A0D631531FEC678100AE0AED /* music3.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D631561FEC678A00AE0AED /* music2.mp3 in Resources */,
 				A0068AC61FE877D20038BAC0 /* LaunchScreen.storyboard in Resources */,
 				A0374A671FE9691D0083937B /* Calibre-BoldItalic.otf in Resources */,
 				A0374A6E1FE9691D0083937B /* Calibre-Bold.otf in Resources */,
@@ -323,6 +347,7 @@
 				A0374A6A1FE9691D0083937B /* Calibre-Medium.otf in Resources */,
 				A0374A6B1FE9691D0083937B /* Calibre-Regular.otf in Resources */,
 				A0374A711FE9691D0083937B /* Calibre-ThinItalic.otf in Resources */,
+				A0D631511FEC60A700AE0AED /* music0.mp3 in Resources */,
 				A02A70391FE906B60097D878 /* GoogleService-Info.plist in Resources */,
 				A0374A6D1FE9691D0083937B /* Calibre-MediumItalic.otf in Resources */,
 				A0374A661FE9691D0083937B /* Calibre-Thin.otf in Resources */,
@@ -330,11 +355,13 @@
 				A0374A6C1FE9691D0083937B /* Calibre-BlackItalic.otf in Resources */,
 				A0374A781FE969310083937B /* Apercu.otf in Resources */,
 				A0374A6F1FE9691D0083937B /* Calibre-Light.otf in Resources */,
+				A0D6314F1FEC5F1D00AE0AED /* music1.mp3 in Resources */,
 				A0374A721FE9691D0083937B /* Calibre-LightItalic.otf in Resources */,
 				A0374A681FE9691D0083937B /* Calibre-Semibold.otf in Resources */,
 				A0374A691FE9691D0083937B /* Calibre-SemiboldItalic.otf in Resources */,
 				A0374A571FE9684A0083937B /* Assets.xcassets in Resources */,
 				A0068AC11FE877D20038BAC0 /* Main.storyboard in Resources */,
+				A0D631541FEC678200AE0AED /* music3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +382,8 @@
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GravitySliderFlowLayout/GravitySliderFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -368,6 +397,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GravitySliderFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -423,6 +454,7 @@
 				A0068ABE1FE877D20038BAC0 /* HomeVC.swift in Sources */,
 				A0105C101FE96482001E5864 /* RoundedButton.swift in Sources */,
 				A0068ABC1FE877D20038BAC0 /* AppDelegate.swift in Sources */,
+				A0602E2B1FEC777200090366 /* HoroscopeCell.swift in Sources */,
 				A0461CFE1FEAB75E00553A84 /* BirthPlaceVC.swift in Sources */,
 				A0C7AB321FEA62D100FA16E4 /* BirthDateVC.swift in Sources */,
 				A0461D021FEAE48800553A84 /* WelcomeVC.swift in Sources */,

@@ -60,7 +60,22 @@ class AuthService {
       return false
     }
   }
-    
+  
+  func logoutUser(completion: @escaping CompletionHandler) {
+    guard Auth.auth().currentUser != nil else {
+      return
+    }
+    do {
+      try Auth.auth().signOut()
+      FBSDKLoginManager().logOut()
+      AstroService.instance.horoscopes.removeAll()
+      completion(true)
+    } catch let error as NSError {
+      debugPrint(error.localizedDescription)
+      completion(false)
+    }
+  }
+  
   func signInUser(credential: AuthCredential, completion: @escaping CompletionHandler) {
     Auth.auth().signIn(with: credential, completion: { (user, error) in
       if error == nil {
@@ -113,8 +128,11 @@ class AuthService {
   }
   
   func setBirthDate(birthDate: String) {
-    let sunSign = calculateSunSign(birthDate: birthDate)
-    let userDic = ["birthDate": birthDate, "sunSign": sunSign]
+//    let sunSign = calculateSunSign(birthDate: birthDate)
+    let userDic = [
+      "birthDate": birthDate,
+      "sunSign": calculateSunSign(birthDate: birthDate)
+    ]
     DataService.instance.createDBUser(uid: self.userUid, userData: userDic)
   }
   

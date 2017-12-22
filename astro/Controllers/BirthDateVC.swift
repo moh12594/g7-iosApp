@@ -82,6 +82,7 @@ class BirthDateVC: UIViewController {
   @objc func doneButtonPressed(sender: UIBarButtonItem) {
     if (dateTextField.text != "") {
       AuthService.instance.setBirthDate(birthDate: dateTextField.text!)
+      Analytics.setUserProperty(dateTextField.text!, forName: "user_birth_year")
       guard let btVC = storyboard?.instantiateViewController(withIdentifier: "birthTimeVC") else {return}
       present(btVC, animated: true, completion: nil)
     }

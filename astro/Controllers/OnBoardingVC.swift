@@ -14,6 +14,7 @@ class OnBoardingVC: UIViewController, UIGestureRecognizerDelegate {
 
   @IBOutlet weak var backgroundView: UIView!
   @IBOutlet weak var textLabel: UILabel!
+  var numberOfTaps: Int = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -53,27 +54,37 @@ class OnBoardingVC: UIViewController, UIGestureRecognizerDelegate {
     let text = textLabel.text!
     switch text {
     case "Hello earthling.":
+      numberOfTaps += 1
       animateLabel(text: "So you wanted to know more about the heavens...")
 //      textLabel.text = "So you wanted to know more about the heavens..."
     case "So you wanted to know more about the heavens...":
+      numberOfTaps += 1
       animateLabel(text: "You're in the right place.")
 //      textLabel.text = "You're in the right place."
     case "You're in the right place.":
+      numberOfTaps += 1
       animateLabel(text: "You see, Astrology is an ancient art that puts planets as an influential component in our life.")
 //      textLabel.text = "You see, Astrology is an ancient art that puts planets as an influential component in our life."
     case "You see, Astrology is an ancient art that puts planets as an influential component in our life.":
+      numberOfTaps += 1
       animateLabel(text: "It is, in a way, an emotional take on Astronomy.")
 //      textLabel.text = "It is, in a way, an emotional take on Astronomy."
     case "It is, in a way, an emotional take on Astronomy.":
+      numberOfTaps += 1
       animateLabel(text: "At the moment of your very first breath, the position of the planets determined what you are.")
 //      textLabel.text = "At the moment of your very first breath, the position of the planets determined what you are."
     default:
+      numberOfTaps += 1
+      Analytics.logEvent("skip_onboarding", parameters: [
+        "number_of_taps": numberOfTaps ])
       guard let bdVC = storyboard?.instantiateViewController(withIdentifier: "birthDateVC") else {return}
       present(bdVC, animated: true, completion: nil)
     }
   }
   
   @IBAction func skipButtonWasPressed(_ sender: Any) {
+    Analytics.logEvent("skip_onboarding", parameters: [
+      "number_of_taps": numberOfTaps ])
     guard let bdVC = storyboard?.instantiateViewController(withIdentifier: "birthDateVC") else {return}
     present(bdVC, animated: true, completion: nil)
   }

@@ -42,15 +42,12 @@ func calculateSunSign(birthDate: String)->String {
     print("YEES \(date)")
     dateFormatter.dateFormat = "yyyy"
     let yearString: String = dateFormatter.string(from: date)
-    let year = Int(yearString)
     dateFormatter.dateFormat = "MM"
     let monthString: String = dateFormatter.string(from: date)
     let month = Int(monthString)
-    print("YEES \(month)")
     dateFormatter.dateFormat = "dd"
     let dayString: String = dateFormatter.string(from: date)
     let day = Int(dayString)
-    print("YEES \(day)")
     let ariesDate: Bool = (month! == 03 && day! >= 21) || (month! == 04 && day! < 20)
     let taurusDate: Bool = (month! == 04 && day! >= 21) || (month! == 05 && day! < 21)
     let geminiDate: Bool = (month! == 05 && day! >= 21) || (month! == 06 && day! < 21)

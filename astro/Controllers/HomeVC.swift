@@ -9,9 +9,12 @@
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import NVActivityIndicatorView
 
 class HomeVC: UIViewController {
 
+  @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -23,14 +26,24 @@ class HomeVC: UIViewController {
   }
 
   @IBAction func facebookLoginWasPressed(_ sender: Any) {
-    Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-      AnalyticsParameterItemID: "Facebook clocked" as NSObject,
-      AnalyticsParameterItemName: "ok ok" as NSObject,
-      AnalyticsParameterContentType: "cont" as NSObject
-      ])
+    
+    self.activityIndicatorView.isHidden = false
+    self.activityIndicatorView.startAnimating()
     AuthService.instance.facebookLogin(viewConroller: self) { (success) in
       if success {
-        self.performSegue(withIdentifier: "connected", sender: nil)
+        Analytics.logEvent("sign_up", parameters: [
+          "signUpMethod": "Facebook" ])
+        DataService.instance.checkUserBirthPlace(handler: { (hasBirthPlace) in
+          if hasBirthPlace {
+            self.activityIndicatorView.stopAnimating()
+            guard let welcomeVC = storyboard?.instantiateViewController(withIdentifier: "welcomeVC") else {return}
+            present(welcomeVC, animated: true, completion: nil)
+          } else {
+            self.activityIndicatorView.stopAnimating()
+            self.performSegue(withIdentifier: "connected", sender: nil)
+          }
+        })
+        
       } else {
         print("error")
       }
