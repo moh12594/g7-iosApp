@@ -9,4 +9,12 @@ target 'astro' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FSPagerView', '~> 0.7'
+  pod 'GravitySliderFlowLayout'
+  pod 'NVActivityIndicatorView'
 end

@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
+import NVActivityIndicatorView
 
 class HomeVC: UIViewController {
 
+  @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
   }
 
   override func didReceiveMemoryWarning() {
@@ -20,6 +25,31 @@ class HomeVC: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  @IBAction func facebookLoginWasPressed(_ sender: Any) {
+    
+    self.activityIndicatorView.isHidden = false
+    self.activityIndicatorView.startAnimating()
+    AuthService.instance.facebookLogin(viewConroller: self) { (success) in
+      if success {
+        Analytics.logEvent("sign_up", parameters: [
+          "signUpMethod": "Facebook" ])
+        DataService.instance.checkUserBirthPlace(handler: { (hasBirthPlace) in
+          if hasBirthPlace {
+            self.activityIndicatorView.stopAnimating()
+            guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "welcomeVC") else {return}
+            self.present(welcomeVC, animated: true, completion: nil)
+          } else {
+            self.activityIndicatorView.stopAnimating()
+            self.performSegue(withIdentifier: "connected", sender: nil)
+          }
+        })
+        
+      } else {
+        print("error")
+      }
+    }
+  }
 
+  
 }
 
