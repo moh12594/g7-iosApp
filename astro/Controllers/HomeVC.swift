@@ -36,8 +36,8 @@ class HomeVC: UIViewController {
         DataService.instance.checkUserBirthPlace(handler: { (hasBirthPlace) in
           if hasBirthPlace {
             self.activityIndicatorView.stopAnimating()
-            guard let welcomeVC = storyboard?.instantiateViewController(withIdentifier: "welcomeVC") else {return}
-            present(welcomeVC, animated: true, completion: nil)
+            guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "welcomeVC") else {return}
+            self.present(welcomeVC, animated: true, completion: nil)
           } else {
             self.activityIndicatorView.stopAnimating()
             self.performSegue(withIdentifier: "connected", sender: nil)
